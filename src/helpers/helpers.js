@@ -81,4 +81,7 @@ hbs.registerHelper("RegEst",(Estu)=>{
     let result = funciones.RegisterEst(Estu);
     respo = "<h1>"+ result +"</h1>"
 return respo;
-})
+});
+hbs.registerHelper("listestxcur",()=>{  
+    funciones.listrel();
+});

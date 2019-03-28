@@ -36,15 +36,6 @@
     "statusCourse": "Cerrado"
   },
   {
-    "idCourse": null,
-    "nCourse": "",
-    "desCourse": "",
-    "valCourse": null,
-    "modCourse": "-",
-    "intCourse": "",
-    "statusCourse": ""
-  },
-  {
     "idCourse": 90,
     "nCourse": "Angular4",
     "desCourse": "Intrducción a angular4",

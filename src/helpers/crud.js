@@ -67,7 +67,11 @@ const save =(file)=>{
     }
 } 
 
-
+const listrel = ()=>{
+    list();
+    let cruce = listInscri.concat(listCourse)
+    console.log(cruce)
+}
 
 
  const deleteE = (idEst) =>{
@@ -82,6 +86,7 @@ const save =(file)=>{
  }
 module.exports = {
     createCourse,
+    listrel,
     RegisterEst,
     deleteE
 }
