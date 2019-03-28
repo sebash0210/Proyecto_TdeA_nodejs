@@ -1,0 +1,23 @@
+[
+  {
+    "idEst": 345,
+    "nEst": "sebastian",
+    "emailEst": "sebash0210@hotmail.com",
+    "telEst": 31284787,
+    "course": "Angular4"
+  },
+  {
+    "idEst": 3475,
+    "nEst": "Julian",
+    "emailEst": "jul@hotmail.com",
+    "telEst": 3453564,
+    "course": "node.js"
+  },
+  {
+    "idEst": 567,
+    "nEst": "Camila",
+    "emailEst": "cami@gmail.com",
+    "telEst": 457567,
+    "course": "veu.js"
+  }
+]

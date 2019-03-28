@@ -1,0 +1,56 @@
+[
+  {
+    "idCourse": 123,
+    "nCourse": "node.js",
+    "desCourse": "Curso basico de node js",
+    "valCourse": 100000,
+    "modCourse": "Virtual",
+    "intCourse": 32,
+    "statusCourse": "Disponible"
+  },
+  {
+    "idCourse": 456,
+    "nCourse": "veu.js",
+    "desCourse": "Curso basico de veu js",
+    "valCourse": 150000,
+    "modCourse": "Virtual",
+    "intCourse": 32,
+    "statusCourse": "Disponible"
+  },
+  {
+    "idCourse": 789,
+    "nCourse": "JavaScript",
+    "desCourse": "Curso basico de JavaScript",
+    "valCourse": 150000,
+    "modCourse": "Virtual",
+    "intCourse": 32,
+    "statusCourse": "Disponible"
+  },
+  {
+    "idCourse": 7,
+    "nCourse": "JavaScript avanzado",
+    "desCourse": "Curso avanzado de JavaScript",
+    "valCourse": 150000,
+    "modCourse": "Virtual",
+    "intCourse": 32,
+    "statusCourse": "Cerrado"
+  },
+  {
+    "idCourse": null,
+    "nCourse": "",
+    "desCourse": "",
+    "valCourse": null,
+    "modCourse": "-",
+    "intCourse": "",
+    "statusCourse": ""
+  },
+  {
+    "idCourse": 90,
+    "nCourse": "Angular4",
+    "desCourse": "Intrducción a angular4",
+    "valCourse": 150000,
+    "modCourse": "-",
+    "intCourse": "48",
+    "statusCourse": "Disponible"
+  }
+]

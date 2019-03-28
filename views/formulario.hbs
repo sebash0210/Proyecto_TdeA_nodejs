@@ -1,0 +1,47 @@
+{{>header}}
+<div class="row">
+<div class="container-fluid">
+    <form action="/crearCurso" method="POST">
+      <div class="form-group"> 
+          <label for="idCurso" class="control-label">Id Curso</label>
+          <input type="number" class="form-control" id="idCurso" name="idcurso" placeholder="" required>
+      </div>    
+  
+      <div class="form-group"> 
+          <label for="namec_id" class="control-label">Nombre del Curso</label>
+          <input type="text" class="form-control" id="namec_id" name="nombrec" placeholder="" required>
+      </div>                    
+                              
+      <div class="form-group">
+          <label for="desc_id" class="control-label">Descripcion</label>
+          <input type="text" class="form-control" id="desc_id" name="descc" placeholder="" required>
+      </div>    
+  
+      <div class="form-group">
+          <label for="valor_id" class="control-label">Valor</label>
+          <input type="number" class="form-control" id="valor_id" name="val" placeholder="" required>
+      </div>                                    
+                              
+      <div class="form-group"> <!-- State Button -->
+          <label for="mod_id" class="control-label">Modalidad</label>
+          <select class="form-control" id="mod_id" name="mod">
+              <option value="-" ></option>
+              <option value="Virtual">Modalidad Virtual</option>
+              <option value="Presencial">Modalidad Presencial</option>
+          </select>                    
+      </div>  
+      <div class="form-group">
+          <label for="est_id" class="control-label">Estado del Curso</label>
+          <input type="text" class="form-control" id="est_id" name="est" placeholder="">
+      </div>      
+      <div class="form-group">
+          <label for="int_id" class="control-label">Intensidad</label>
+          <input type="text" class="form-control" id="int_id" name="int" placeholder="">
+      </div>          
+      <div class="form-group"> 
+          <button type="submit" class="btn btn-primary">Registrar</button>
+      </div>       
+    </form>
+  </div>
+</div>
+{{>footer}}

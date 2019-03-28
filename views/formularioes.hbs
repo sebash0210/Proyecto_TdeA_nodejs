@@ -1,0 +1,34 @@
+{{>header}}
+<div class="row">
+<div class="container-fluid">
+    <form action="/registrarEst" method="POST">
+      <div class="form-group"> 
+          <label for="ides" class="control-label">Id Estudiante</label>
+          <input type="number" class="form-control" id="ide" name="ides" placeholder="" required>
+      </div>    
+  
+      <div class="form-group"> 
+          <label for="namec_id" class="control-label">Nombre Completo</label>
+          <input type="text" class="form-control" id="namec_id" name="nombree" placeholder="" required>
+      </div>                    
+                              
+      <div class="form-group">
+          <label for="desc_id" class="control-label">Correo</label>
+          <input type="text" class="form-control" id="desc_id" name="email" placeholder="correo@correo.com" required>
+      </div>    
+  
+      <div class="form-group">
+          <label for="valor_id" class="control-label">Telefono</label>
+          <input type="number" class="form-control" id="valor_id" name="tel" placeholder="" required>
+      </div>                                    
+      <div class="form-group">
+          <label for="est_id" class="control-label">Curso</label>
+          <input type="text" class="form-control" id="est_id" name="cur" placeholder="">
+      </div>               
+      <div class="form-group"> 
+          <button type="submit" class="btn btn-primary">Registrar</button>
+      </div>       
+    </form>
+  </div>
+</div>
+{{>footer}}
