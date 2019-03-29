@@ -1,0 +1,17 @@
+{{>header}}
+   <form action="/consin" method="POST">
+     <label for='mod_id' class='control-label' style="text-align: right">listado de inscritos</label>
+     <div class="row">
+        <div class="col-sm-4">
+           <div class="form-group"> <!-- State Button -->
+              {{{option}}}                          
+           </div> 
+        </div>
+        <div class="col-sm-8">
+             <div class="form-group"> 
+                 <button type="submit" class="btn btn-primary">Consultar</button>
+             </div>  
+        </div>
+     </div>
+    </form>
+{{>footer}}

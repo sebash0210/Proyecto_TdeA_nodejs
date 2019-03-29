@@ -1,7 +1,7 @@
 const fs = require('fs');
 
 listCourse = [];
-
+let listinsxcurso=[];
 const RegisterEst = (Estudiante)=>{
     list();
     let inscEst ={
@@ -11,9 +11,14 @@ const RegisterEst = (Estudiante)=>{
         telEst: Estudiante.tel,
         course: Estudiante.curso,
     }
+    let cursoest ={
+        nEst:Estudiante.namee,
+        course: Estudiante.curso
+    }
     let dupl = listInscri.find(id => (id.idEst == Estudiante.ide) && (id.course == Estudiante.curso));
     if(!dupl){
         listInscri.push(inscEst);
+        listinsxcurso.push(cursoest);
         save('E');
         resp="Se registro correctamente el Estudiante";
     }else{
@@ -48,6 +53,7 @@ const createCourse = (course)=>{
 const list =()=>{  
         listCourse = require('./../../lista_cursos.json') 
         listInscri = require('./../../lista_Inscritos.json') 
+        listinsxcurso =  require('./../../insc_cursos.json') 
 }
 const save =(file)=>{
     if (file=='C'){
@@ -59,6 +65,10 @@ const save =(file)=>{
         })
     }else {
         let data = JSON.stringify(listInscri,null,2);
+        let datacr = JSON.stringify(listinsxcurso,null,2);
+        fs.writeFileSync('insc_cursos.json',datacr,(err)=>{
+            if (err) throw  (err);
+        })
         fs.writeFileSync('lista_Inscritos.json',data,(err)=>{
             if (err) throw  (err);
             let msg = 'Estudiante inscrito con exito';
@@ -67,10 +77,10 @@ const save =(file)=>{
     }
 } 
 
-const listrel = ()=>{
+const listrel = (c)=>{
     list();
-    let cruce = listInscri.concat(listCourse)
-    console.log(cruce)
+    let newarray = listinsxcurso.filter(ele => ele.course == c) 
+    return newarray;
 }
 
 

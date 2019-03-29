@@ -29,6 +29,10 @@ app.get('/consultar',(req,res)=>{
     });
 });
 
+app.get('/int',(req,res)=>{
+    res.render('consultinsc',{
+    });
+});
 app.post('/registrarEst',(req,res)=>{
     res.render('inscribir',{Es:{
         ide:parseInt(req.body.ides),
@@ -37,6 +41,11 @@ app.post('/registrarEst',(req,res)=>{
         tel:parseInt(req.body.tel),
         curso: req.body.cur
     }});
+})
+app.post('/consin',(req,res)=>{
+    res.render('consultari',{
+        course:req.body.mod
+    });
 })
 
 

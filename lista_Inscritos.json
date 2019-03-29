@@ -19,5 +19,12 @@
     "emailEst": "cami@gmail.com",
     "telEst": 457567,
     "course": "veu.js"
+  },
+  {
+    "idEst": 123,
+    "nEst": "Maria Camila",
+    "emailEst": "mac@gmail.com",
+    "telEst": 312847989,
+    "course": "veu.js"
   }
 ]

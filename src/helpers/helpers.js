@@ -82,6 +82,30 @@ hbs.registerHelper("RegEst",(Estu)=>{
     respo = "<h1>"+ result +"</h1>"
 return respo;
 });
-hbs.registerHelper("listestxcur",()=>{  
-    funciones.listrel();
+hbs.registerHelper("listestxcur",(c)=>{  
+
+    let consult = funciones.listrel(c);
+        texto = "<table class='table'> \
+        <thead class='thead-dark'> \
+           <th scope='col'>Nombre</th>" +
+        "</thead> \
+        <tbody>";
+        consult.forEach(element => {
+            texto =  texto + 
+                        "<tr>" +
+                        "<td>" + element.nEst  + "</td>" +
+                        "</tr>";
+        })
+        texto= texto + "</tbody></table>";
+        return texto;
 });
+hbs.registerHelper("option",()=>{  
+    listCourse = require('./../../lista_cursos.json')
+    texto = "<select class='form-control' id='mod_id' name='mod'>"
+    listCourse.forEach(element => {
+        texto = texto + "<option value=" + element.nCourse + ">" + element.nCourse +"</option>"
+      });
+      texto= texto + "</select>"
+      return texto;
+})
+   
